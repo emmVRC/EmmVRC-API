@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="socket.js"></script>
+</head>
+
+<body>
+    <script>
+        const socket = io('http://localhost:3000');
+        socket.on('data', (data) => {
+            console.log(data);
+            socket.emit('success', { data: 'HOLY SHIT' });
+        });
+    </script>
+</body>
+
+</html>

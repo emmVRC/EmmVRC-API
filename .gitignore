@@ -1,0 +1,12 @@
+#nodeJS
+node_modules/
+
+#custom
+dev/
+.env
+Avatars/
+component/debug/
+sqlUPDATES.txt
+
+/cert.pem
+/privkey.pem
